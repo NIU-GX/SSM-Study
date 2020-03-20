@@ -19,8 +19,8 @@
 
     <!--配置视图解析器-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/page"></property>
-        <property name="suffix" value=".html"></property>
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
 
     <!--两个标准配置-->
@@ -28,6 +28,7 @@
     org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler，它会像一个检查员，
     对进入DispatcherServlet的URL进行筛查，如果发现是静态资源的请求，就将该请求转由Web应用服务器默认的Servlet处理，
     如果不是静态资源的请求，才由DispatcherServlet继续处理-->
+
     <mvc:default-servlet-handler/>
 
     <!--开启注解支持-->

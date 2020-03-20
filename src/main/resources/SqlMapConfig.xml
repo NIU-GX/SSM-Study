@@ -9,4 +9,8 @@
     <typeAliases>
         <package name="com.example.bean"/>
     </typeAliases>
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"/>
+    </plugins>
+
 </configuration>

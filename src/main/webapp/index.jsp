@@ -9,8 +9,9 @@
 <html>
 <head>
     <title>首页</title>
+    <jsp:forward page="/emps"></jsp:forward>
 </head>
 <body>
-    <h1>ssm整合环境搭建</h1>
+
 </body>
 </html>
